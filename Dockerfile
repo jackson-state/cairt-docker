@@ -27,6 +27,12 @@ RUN pip install --upgrade pip \
         pydevd  \
         pyqt5
         
+RUN rm -rf /tmp/* \
+    && apt-get -qq -y autoremove \
+    && apt-get autoclean \
+    && rm -rf /var/lib/apt/lists/* /var/log/dpkg.log     
+
+        
 # Attach this container to stdin when running, like this:
 # docker run --net=host -t -i jsums/cairt
 #--net=host allows listening to incoming connections on the host ip
