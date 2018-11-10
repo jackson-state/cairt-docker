@@ -32,6 +32,8 @@ RUN rm -rf /tmp/* \
     && apt-get autoclean \
     && rm -rf /var/lib/apt/lists/* /var/log/dpkg.log     
 
+    
+EXPOSE 443 9390
         
 # Attach this container to stdin when running, like this:
 # docker run --net=host -t -i jsums/cairt
