@@ -1,4 +1,4 @@
-FROM jsums/msf_openvas_conda_pycharm
+FROM jsums/msf-openvas-conda-pycharm
 MAINTAINER Ashley Abraham "ashley.abraham@jsums.edu"
 
 ENV DEBIAN_FRONTEND noninteractive
